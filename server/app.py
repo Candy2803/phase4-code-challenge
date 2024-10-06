@@ -103,7 +103,6 @@ def hero_powers():
         # Commit changes
         db.session.add(new_power)
         db.session.commit()
-        # WHY NOT USING 201?????????
         return make_response(new_power.to_dict(), 200)
     
 if __name__ == '__main__':
